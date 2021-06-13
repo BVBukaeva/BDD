@@ -1,0 +1,35 @@
+ru.netology.web.test.MoneyTransferTest > shouldBeErrorWhenAmountEmpty() FAILED
+    org.opentest4j.AssertionFailedError: Unexpected exception thrown: com.codeborne.selenide.ex.ElementShould: Element should be visible {[data-test-id = error-notification]}
+[Thread-4] INFO com.codeborne.selenide.drivercommands.CloseDriverCommand - Close webdriver: 24 -> ChromeDriver: chrome on WINDOWS (d9faeb14688819879edfea9cf5e4df81)    Element: '<div class="notification notification_status_error notification_has-closer notification
+_stick-to_right notification_theme_alfa-on-white" data-test-id="error-notification" displayed:false></div>'
+
+    Actual value: visible:false
+    Screenshot: file:/C:/Projects/BDD/build/reports/tests/1623613254242.0.png
+    Page source: file:/C:/Projects/BDD/build/reports/tests/1623613254242.0.html
+    Timeout: 4 s.
+        at org.junit.jupiter.api.AssertDoesNotThrow.createAssertionFailedError(AssertDoesNotThrow.java:83)
+        at org.junit.jupiter.api.AssertDoesNotThrow.assertDoesNotThrow(AssertDoesNotThrow.java:54)
+        at org.junit.jupiter.api.AssertDoesNotThrow.assertDoesNotThrow(AssertDoesNotThrow.java:37)
+        at org.junit.jupiter.api.Assertions.assertDoesNotThrow(Assertions.java:3005)
+        at ru.netology.web.test.MoneyTransferTest.shouldBeErrorWhenAmountEmpty(MoneyTransferTest.java:128)
+
+        Caused by:
+        Element should be visible {[data-test-id = error-notification]}
+        Element: '<div class="notification notification_status_error notification_has-closer notification_stick-to_right notification_theme_alfa-on-white" data-test-id="error-notification" displayed:false></div>'
+        Actual value: visible:false
+        Screenshot: file:/C:/Projects/BDD/build/reports/tests/1623613254242.0.png
+        Page source: file:/C:/Projects/BDD/build/reports/tests/1623613254242.0.html
+        Timeout: 4 s.
+            at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:72)
+            at com.codeborne.selenide.commands.Should.execute(Should.java:24)
+            at com.codeborne.selenide.commands.Should.execute(Should.java:10)
+            at com.codeborne.selenide.commands.Commands.execute(Commands.java:148)
+            at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:100)
+            at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:66)
+            at com.sun.proxy.$Proxy15.shouldBe(Unknown Source)
+            at ru.netology.web.page.TransferPage.invalidMoneyTransfer(TransferPage.java:36)
+            at org.junit.jupiter.api.AssertDoesNotThrow.assertDoesNotThrow(AssertDoesNotThrow.java:50)
+            ... 3 more
+[Thread-6] INFO com.codeborne.selenide.drivercommands.CloseDriverCommand - Trying to close the browser ChromeDriver ...
+[Webdrivers killer thread] INFO com.codeborne.selenide.impl.UnusedWebdriversCleanupThread - Thread 11 is dead. Let's close webdriver ChromeDriver: chrome on WINDOWS (d9faeb14688819879edfea9cf5e4df81)
+[Thread-4] INFO com.codeborne.selenide.drivercommands.CloseDriverCommand - Closed webdriver 24 in 608 ms
