@@ -14,4 +14,4 @@ install:
 
 build_script:
   - chmod +x gradlew
-  - ./gradlew test --info "-Dselenide.headless=true" "-Dselenide.browse=http://localhost:9999"  # запускаем тест, флаг --info позволяет выводить больше информации
+  - ./gradlew test --info "-Dselenide.headless=true" "-Dselenide.baseUrl=http://localhost:9999"  # запускаем тест, флаг --info позволяет выводить больше информации
